@@ -1,0 +1,26 @@
+"""
+Use the code in favorite_languages.py
+
+Make a list of people who should take the favorite languages poll. 
+Include some names that are already in the dictionary and some that are 
+not.
+
+Loop through the list of people who should take the poll. If they have 
+already taken the poll, print a message thanking them for responding. If
+ they have not yet taken the poll, print a message inviting them to take
+ the poll.
+ """
+
+favorite_languages = {'jen': 'python',
+                      'sarah': 'c',
+                      'edward': 'rust',
+                      'phil': 'python'
+                      }
+
+friends = ['jen', 'phil', 'sarah', 'timothy', 'kelly']
+
+for friend in sorted(friends):
+    if friend in favorite_languages:
+        print(f'Thank you for taking the poll, {friend.title()}.')
+    else:
+        print(f'You have yet to take the poll, {friend.title()}.')
